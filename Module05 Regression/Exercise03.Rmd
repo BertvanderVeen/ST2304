@@ -246,9 +246,7 @@ SimPrediction2 function and calculate
 the confidence interval for these predictions. 
 How is this different to the confidence interval in 1.5? </span>
 
-<span style="color:blue"> 1.8. the confidence interval from 1.7 more accurately 
-represents a 95% prediction interval (the confidence interval for a prediction) 
-how would you interpret these confidence intervals for the prediction? i.e. give 
+<span style="color:blue"> 1.8. How would you interpret these confidence intervals for the prediction? i.e. give 
 a definition of what they mean/represent.</span>
 
 ```{r SimNewObs, echo=TRUE}
@@ -357,11 +355,11 @@ Question 1 should help you with using the right code
 <span style="color:blue">2. Run the linear regression model in R for `Length` 
 as a response to `BookOrder`. Look at the results from the model. </span>
 
-<span style="color:blue">2.1. Is there evidence that the books are getting longer?</span>
+<span style="color:blue">2.1. Can you show with the parameter estimates that the books are getting longer on average?</span>
 
-<span style="color:blue">2.2. how much longer is each book getting (on average)? What is the uncertainty around this?</span>
+<span style="color:blue">2.2. What is the uncertainty around the average book length? Does it change your conclusion?</span>
 
-<span style="color:blue">2.3. how long do you predict Book 7 should be? What is the prediction interval around that?</span>
+<span style="color:blue">2.3. How long do you predict Book 7 should be? What is the prediction interval around that?</span>
 
 <span style="color:blue">2.4. The final Harry Potter book was actually 607 pages long. How good was the prediction? What does this tell us about making predictions from linear regression analyses?</span>
 
