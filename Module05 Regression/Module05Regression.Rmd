@@ -382,7 +382,7 @@ The first step for this would be to write out the likelihood equation for this m
 The log-likelihood is 
 
 $$
-l(\mathbf{y}|\mathbf{x}, \alpha, \beta, \sigma^2) = - \frac{n}{2} \log{\sigma^2} - \sum_{i=1}^n 
+l(\alpha, \beta, \sigma^2;\mathbf{y},\mathbf{x}) = - \frac{n}{2} \log{\sigma^2} - \sum_{i=1}^n 
 {\frac{{(y_i - \alpha - \beta x_i)^2}}{2\sigma^2} }
 $$
 

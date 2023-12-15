@@ -699,7 +699,7 @@ For GLMs this is the same as for linear models. For linear models you know the A
 
 AIC/BIC = Deviance + 2*parameters
 
-Deviance = $-2l(\theta|Y)$ which is -2 times the difference in loglikelihood between two nested models (models that have some structure the same e.g. Y ~ X and Y ~ X + Z but NOT Y ~ X and Y ~ Z)
+Deviance = $-2l(\theta;Y)$ which is -2 times the difference in loglikelihood between two nested models (models that have some structure the same e.g. Y ~ X and Y ~ X + Z but NOT Y ~ X and Y ~ Z)
 
 ### Confirmatory model selection:
 

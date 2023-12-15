@@ -607,7 +607,7 @@ In 1715 an English mathematician called Brook Taylor showed that any well enough
 $$
 f(x,a) = \sum_{j=0}^{\infty}\frac{f^{(j)}(a)}{j!}(x-a)^j
 $$
-So the polymonial has terms $Ax$ (linear), $Bx^2$ (squared, or quadratic), $Cx^3$ (cubed) etc. This is called a *Taylor series expansion* around $a$: it provides an approximation for the curve around the point $a$, and as we add higher values of $j$ to the sum, the approximation gets better (and is better further away from $a$). In case you are wondering, $a$ is there because we want to approximate the function near that point: the further away from $a$, the worse the approximation. You may already be able to guess what we are going to use for $a$.
+So the polynomial has terms $Ax$ (linear), $Bx^2$ (squared, or quadratic), $Cx^3$ (cubed) etc. This is called a *Taylor series expansion* around $a$: it provides an approximation for the curve around the point $a$, and as we add higher values of $j$ to the sum, the approximation gets better (and is better further away from $a$). In case you are wondering, $a$ is there because we want to approximate the function near that point: the further away from $a$, the worse the approximation. You may already be able to guess what we are going to use for $a$.
 
 For our purposes, we can re-write the function to look like a multiple regression, and not use all of the powers (i.e. we don't go up to $x^\infty$):
 

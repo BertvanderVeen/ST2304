@@ -171,18 +171,18 @@ The histogram looks more like a normal distribution.
 
 ## Is the Poisson a GLM?
 
-The log-likelihood is $l(N=r | \lambda) = r \log{\lambda} - \lambda - log(t!)$, so how does this compare to a GLM likelihood? Let's use some colours!
+The log-likelihood is $l(\lambda;N=r) = r \log{\lambda} - \lambda - log(t!)$, so how does this compare to a GLM likelihood? Let's use some colours!
 
 The log-likelihood:
 
 $$
-l(N=r | \lambda) = {\color{red} r} {\color{blue} \log{\lambda}} - {\color{cyan} \lambda} - 
+l(\lambda;N=r) = {\color{red} r} {\color{blue} \log{\lambda}} - {\color{cyan} \lambda} - 
 {\color{orange} \log(t!)}
 $$
 
 The GLM likelihood:
 $$
-l(\theta | y) = \frac{ {\color{red} y} {\color{blue} \theta} - {\color{cyan} b(\theta) }}{a(\phi)} - {\color{orange} c(\phi, y)}
+l(\theta ; y) = \frac{ {\color{red} y} {\color{blue} \theta} - {\color{cyan} b(\theta) }}{a(\phi)} - {\color{orange} c(\phi, y)}
 $$
 
 So $a(\phi)=1$
@@ -652,7 +652,7 @@ Overdispersion is so common that a few ways have been eveloped to deal with it:
 The general form for a GLM likelihood is 
 
 $$
-l(\theta | y) = \frac{y \theta -b(\theta)}{a(\phi)} + c(y, \phi)
+l(\theta ; y) = \frac{y \theta -b(\theta)}{a(\phi)} + c(y, \phi)
 $$
 
 Thus far we have not discussed $\phi$ much. But here we need it. One way to correct for overdispersion is to write $a(\phi) = c \phi$, and to estimate $c$. We can do this with the **deviance ratio**:

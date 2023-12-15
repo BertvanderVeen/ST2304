@@ -332,14 +332,14 @@ video to go through this section.</span>
 If we are modelling our data, we have observations $y_i$, then we assume they were drawn from a normal distribution with mean $\mu$ and variance $\sigma^2$. The likelihood for this data is the probability density function (now as a function of the parameters): the log-likelihood for a single datapoint is 
 
 $$
-l(\mu, \sigma^2|y_1) = -\frac{1}{2} log({2 \pi \sigma^2)  -\frac{(y_1 - \mu)^2}{2\sigma^2} }
+l(\mu, \sigma^2;y_1) = -\frac{1}{2} log({2 \pi \sigma^2)  -\frac{(y_1 - \mu)^2}{2\sigma^2} }
 $$
 
 In practice, we can calculate this with `dnorm(..., log=TRUE)`. If we have $n$ data points, the likelihood for them all is 
 
 $$
 \begin{aligned}
-l(\mu, \sigma^2|y_1, y_2, ..., y_n) &= \sum_{i=1}^{n} \left( -\frac{1}{2} \log(2 \pi \sigma^2)  -\frac{(y_1 - \mu)^2}{2\sigma^2} \right) \\
+l(\mu, \sigma^2,y_1, y_2, ..., y_n) &= \sum_{i=1}^{n} \left( -\frac{1}{2} \log(2 \pi \sigma^2)  -\frac{(y_1 - \mu)^2}{2\sigma^2} \right) \\
   &=  -\frac{1}{2} n \log(2 \pi \sigma^2) - \frac{1}{2\sigma^2} \sum_{i=1}^{n} (y_1 - \mu)^2
   \end{aligned}
 $$
@@ -399,14 +399,14 @@ But we can do better than this: we can find the maximum with a bit of maths. We 
 Our log-likelihood is
 
 $$
-l(\mu, \sigma^2|y_1, y_2, ..., y_n) =  -\frac{1}{2} nlog({2 \pi \sigma^2)  - \sum_{i=1}^{n} \frac{(y_1 - \mu)^2}{2\sigma^2} }
+l(\mu, \sigma^2;y_1, y_2, ..., y_n) =  -\frac{1}{2} nlog({2 \pi \sigma^2)  - \sum_{i=1}^{n} \frac{(y_1 - \mu)^2}{2\sigma^2} }
 $$
 
 We can ignore the $-\frac{1}{2} nlog(2 \pi \sigma^2)$, because it does not involve $\mu$. And we can re-arrange the sum:
 
 $$
 \begin{aligned}
-l(\mu, \sigma^2|y_1, y_2, ..., y_n) &= - \sum_{i=1}^{n} \frac{(y_1 - \mu)^2}{2\sigma^2}  \\
+l(\mu, \sigma^2;y_1, y_2, ..., y_n) &= - \sum_{i=1}^{n} \frac{(y_1 - \mu)^2}{2\sigma^2}  \\
    &=   - \frac{1}{2\sigma^2} \sum_{i=1}^{n} (y_i^2 - 2y_i \mu + \mu^2) \\
    &=   - \frac{1}{2\sigma^2} \left( \sum_{i=1}^{n} y_i^2 - 2 \mu \sum_{i=1}^{n}y_i + n \mu^2 \right) \\
 \end{aligned}
@@ -781,7 +781,7 @@ We can also write the model as $\mu_i = \alpha + \beta X_i$. The difference is $
 The log-likelihood is not too difficult to write down
 
 $$
-\log L(\mu_i, \sigma| x_1, ..., x_n) = C - \frac{1}{2\sigma^2} \sum_{i=1}^{n} (x_i - \mu_i)^2
+\log L(\mu_i, \sigma; x_1, ..., x_n) = C - \frac{1}{2\sigma^2} \sum_{i=1}^{n} (x_i - \mu_i)^2
 $$
 where $\mu_i$ is described above.  We now have 3 parameters (two for the means, and the standard deviation). We can look at the likelihood for the difference, using the MLEs for the other parameters.
 

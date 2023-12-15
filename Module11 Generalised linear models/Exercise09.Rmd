@@ -32,14 +32,14 @@ $$
 We want to model $p$, but is it a GLM? In other words, does the likelihood have this form?
 
 $$
-l(\theta | y) = \frac{y \theta -b(\theta)}{a(\phi)} + c(y, \phi)
+l(\theta ; y) = \frac{y \theta -b(\theta)}{a(\phi)} + c(y, \phi)
 $$
 
 It's not obvious, is it? But we can re-arrange things:
 
 $$
 \begin{aligned}
-l(p | r, N) &= \log \left( \begin{array}{c} N \\ r  \end{array} \right) + 
+l(p ; r, N) &= \log \left( \begin{array}{c} N \\ r  \end{array} \right) + 
 r \left( \log{p} - \log{(1-p)} \right)  + N \log{(1-p)} \\
             &= \log \left( \begin{array}{c} N \\ r  \end{array} \right) + 
             r \log \left(\frac{p}{1-p} \right)  + N \log{(1-p)} \\
@@ -60,7 +60,7 @@ $$
 \begin{aligned}
 y &= \frac{r}{N} \\
 \theta &= \log \left(\frac{p}{1-p} \right) \\
-b(\theta) &= \log (1-p) \\ 
+b(\theta) &= -\log (1-p) \\ 
 a(\phi) &= {1/N} \\
 c(y, \phi) &= \log \left( \begin{array}{c} N \\ r  \end{array} \right)
 \end{aligned}

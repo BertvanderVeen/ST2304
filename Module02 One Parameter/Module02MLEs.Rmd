@@ -674,10 +674,10 @@ plot(x = probabilities, y = loglikelihoods,
  The equation for the slope is:
  
  $$
- \frac{d l(p | n)}{dp} = \frac{r}{p} - \frac{N-r}{1-p}
+ \frac{d l(p ; n)}{dp} = \frac{r}{p} - \frac{N-r}{1-p}
  $$
  
- Where, $\frac{d l(p | n)}{dp}$ is the change in likelihood over the change 
+ Where, $\frac{d l(p ; n)}{dp}$ is the change in likelihood over the change 
  in $p$, $\frac{r}{p}$
  is the number of successes over $p$, and $\frac{N-r}{1-p}$ 
  is the number of failures over the 

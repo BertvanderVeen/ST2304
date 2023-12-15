@@ -62,22 +62,22 @@ We can vary $p$, and calculate $Pr(n = r | N, p)$, so that $Pr(n = r | N, p)$ is
 
 ## Maximising the likelihood: the maths
 
-The maximum of the likelihood is at the same value of $p$ as the maximum of the log-likelihood, and it is easier to woth on the log scale. So we will work with $\log(L(p|N, r)) = l(p|N, r)$
+The maximum of the likelihood is at the same value of $p$ as the maximum of the log-likelihood, and it is easier to woth on the log scale. So we will work with $\log(L(p;N, r)) = l(p;N, r)$
 
 $$
-l(p | n) = \log(N !) - \log(r!) - \log((N-r)!) + r \log(p) + (N-r) \log(1-p)
+l(p ; n) = \log(N !) - \log(r!) - \log((N-r)!) + r \log(p) + (N-r) \log(1-p)
 $$
 
 Becuse this is a function of $p$, not $N$ or $r$, several terms are constants:
 
 $$
-l(p | n) = r \log(p) + (N-r) \log(1-p) + C
+l(p ; n) = r \log(p) + (N-r) \log(1-p) + C
 $$
 
 We differentiate with this respect to p to get
 
 $$
-\frac{d l(p | n)}{dp} = \frac{r}{p} - \frac{N-r}{1-p}
+\frac{d l(p ; n)}{dp} = \frac{r}{p} - \frac{N-r}{1-p}
 $$
 
 Then we set the gradient to 0, $0 = \frac{r}{p} - \frac{N-r}{1-p}$, and rearrange to end up with
@@ -451,7 +451,7 @@ When $N$ is large, everything becomes easier (this is a general rule in statisti
 So, if the likelihood is approximately normal, what normal distribution is it approximate to? In other words, what are the mean and standard deviation of the normal distribution? The mean is straightforward: it is the maximum likelihood estimate, i.e. $\hat{p}=r/N$. And the standard deviation is simply the standard error, $\sqrt{\hat{p}(1-\hat{p})/N}$. So, 
 
 $$
-l(p|N, n) \sim N(\hat{p}, \sqrt{\hat{p}(1-\hat{p})/N})
+l(p;N, n) \sim N(\hat{p}, \sqrt{\hat{p}(1-\hat{p})/N})
 $$
 
 We can use this approximation to find the 95% confidence interval. For a standard normal distibution (i.e. a normal with mean 0, variance 1), the interval is (-1.96, 1.96). So for a binomial, we can calculate the interval by transforming the standard normal:
