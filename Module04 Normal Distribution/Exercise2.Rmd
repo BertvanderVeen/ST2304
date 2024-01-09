@@ -11,7 +11,7 @@ This document contains information, questions, R code, and plots.
 
 <span style="color:blue"> Questions appear in blue. </span>
 
-**Exercise to be handed in by 6th February**
+**Exercise to be handed in on the 3rd of February, midnight**
 
 ## Rationale:
 
@@ -92,7 +92,7 @@ on the 100m times for the same runners both before and after infection.
 ![Zombie picture](Zombies.png)
 
 The data can be found here: 
-https://www.math.ntnu.no/emner/ST2304/2023v/Module04/Ztimes100.csv
+https://www.math.ntnu.no/emner/ST2304/2024v/Module04/Ztimes100.csv
 
 **It is your job to analyse the data and decide whether to run or stay.**
 
@@ -103,7 +103,7 @@ The first step is to import the data and assign it to an object. You can use the
 web link above to import the data. It is a csv file with column names (header) included.
 
 ```{r ReadData, warning = FALSE, error = FALSE, include = FALSE, echo = FALSE}
-Ztimes100 <- read.csv("https://www.math.ntnu.no/emner/ST2304/2023v/Module04/Ztimes100.csv", header=T)
+Ztimes100 <- read.csv("https://www.math.ntnu.no/emner/ST2304/2024v/Module04/Ztimes100.csv", header=T)
 ```
 
 Once you have imported the data it is important to look at it. 
@@ -310,7 +310,7 @@ You used `dnorm()` in the exercise part of this week's lecture.
 
 There is also a function there to sum log likelihoods, you can copy and paste to use that here. It is `CalcNormlogLh()` it takes the arguments: (`mu`, `sigma`, and `data`), `mu` = mean, `sigma` = standard deviation and `data` = observed data.
 
-The function is in this script https://www.math.ntnu.no/emner/ST2304/2021v/Week04/NormalDistFunctions.R
+The function is in this script https://www.math.ntnu.no/emner/ST2304/2024v/Week04/NormalDistFunctions.R
 </details>
 
 

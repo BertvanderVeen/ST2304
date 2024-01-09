@@ -555,7 +555,7 @@ It is a `.csv` file with headers.
 
 
 ```{r ReadTimes}
-Times <- read.csv('https://www.math.ntnu.no/emner/ST2304/2023v/Module05/Times.csv', header=T)
+Times <- read.csv('https://www.math.ntnu.no/emner/ST2304/2024v/Module05/Times.csv', header=T)
 ```
 
 </details>

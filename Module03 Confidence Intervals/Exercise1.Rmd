@@ -21,7 +21,7 @@ This document contains information, questions, R code, and plots.
 
 outputs from R appear like the above ^^^^
 
-You should work through the exercise in groups and write answers in a separate document to be submitted on Blackboard by **Friday 5th Feb midnight (or another date)**. 
+You should work through the exercise in groups and write answers in a separate document to be submitted on Blackboard by **Friday 3rd Feb midnight (or another date)**. 
 
 Answer all questions. The assignment can be written in any format 
 (e.g. `.docx`, `.pdf`, `.R`) but
@@ -139,7 +139,7 @@ One of your team has been collecting data on the sex of dragon eggs.
 Conveniently, male dragons are purple and females are red (even as eggs).
 
 They have collected data from 100 eggs. 
-Their data can be found at (https://www.math.ntnu.no/emner/ST2304/2021v/Week03/DragonEggData.csv).
+Their data can be found at (https://www.math.ntnu.no/emner/ST2304/2024v/Module03/DragonEggData.csv).
 This file has a header and is a `.csv`. 
 You can either download and then import it using read.csv() or import directly using the whole web address above. 
 
@@ -169,7 +169,7 @@ This is not a pretty graph but lets you see what sort of data you have.
 
 ```{r ReadData, warning = FALSE, error = FALSE, include = FALSE, echo = FALSE, eval = FALSE}
 # import the data and name it
-SexRatioData <- read.csv('https://www.math.ntnu.no/emner/ST2304/2021v/Week03/DragonEggData.csv', header=T) 
+SexRatioData <- read.csv('https://www.math.ntnu.no/emner/ST2304/2024v/Week03/DragonEggData.csv', header=T) 
 
 # plot the histogram - I have changed the title (main) and 
 # the x axis label (xlab) manually

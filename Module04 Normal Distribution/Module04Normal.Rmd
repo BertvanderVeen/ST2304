@@ -71,15 +71,15 @@ write.csv(GD, file="../Data/GroundhogDayta.csv")
 
 Every 2nd of February, the town of Punxsutawney in the US has a ritual where they go to Gobbler's Knob, drag a groundhog out of the ground, call it Phil, and ask it if it sees ~~Bill Murray's~~ its shadow. If Punxsutawney Phil sees his shadow, he'll decide to retreat, because there will be another 6 weeks of winter.
 
-The data can be found here: https://www.math.ntnu.no/emner/ST2304/2023v/Module04/GroundhogDayta.csv It is a .csv file and can be downloaded AND imported using `read.csv()` and the full url above.
+The data can be found here: https://www.math.ntnu.no/emner/ST2304/2024v/Module04/GroundhogDayta.csv It is a .csv file and can be downloaded AND imported using `read.csv()` and the full url above.
 
 The question is whether Punxsutawney Phil is actually any good at predicting the weather. We will answer that by looking at whether he sees his shadow, and the temperature for the following 6 weeks.
 
 ```{r ReadPuxPhil, echo=FALSE, include = TRUE}
 # read in the functions for this module
-source("https://www.math.ntnu.no/emner/ST2304/2023v/Module04/NormalDistFunctions.R")
+source("https://www.math.ntnu.no/emner/ST2304/2024v/Module04/NormalDistFunctions.R")
 # Read the data
-GDay <- read.csv(file="https://www.math.ntnu.no/emner/ST2304/2023v/Module04/GroundhogDayta.csv")
+GDay <- read.csv(file="https://www.math.ntnu.no/emner/ST2304/2024v/Module04/GroundhogDayta.csv")
 
 plot(GDay$Year, GDay$Temperature, cex=1, pch=3, 
      col=c("red", "blue")[1+GDay$Shadow],
@@ -139,7 +139,7 @@ plot(x,log(y), type="l")
 
 For these exercises you will need a few extra functions. You
 can find them by using `source()` to import and run a script
-found here https://www.math.ntnu.no/emner/ST2304/2023v/Week04/NormalDistFunctions.R
+found here https://www.math.ntnu.no/emner/ST2304/2024v/Week04/NormalDistFunctions.R
 
 Let's look at the normal distribution, and some R functions we can use to play with it. In particular:
 

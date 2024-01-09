@@ -8,7 +8,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-**Due midnight 18th February 2023**^[if this is after 2022, you will be given extra time to invent a time machine]
+**Due midnight 17th February 2024**
 
 ## Question 1: Dragonfire
 
@@ -19,23 +19,10 @@ breath fire after being poked with a very long stick.
 Each dragon was only tested once. 
 Note that no major cities were destroyed during this experiment. 
 
-```{r SimulateData, echo=FALSE}
-set.seed(2021)
-alpha <- 5 # intercept
-beta <- 0.7 # slope
-sigma <- 1 # standard deviation
-Size <- runif(50, 10, 20) # random uniform distribution
-mu <- alpha + beta*Size
-Distance <- rnorm(length(mu), mu, sigma)
-Flames <- data.frame(Size=Size, Distance=Distance)
-#FileFlames <- "https://www.math.ntnu.no/emner/ST2304/2021v/Week05/DragonFire.csv"
-#if(!file.exists(FileFlames)) write.csv(Flames, file=FileFlames)
-```
-
 This is the data:
 
 ```{r ReadDragonData, echo=TRUE}
-DragonFire <- read.csv(file="https://www.math.ntnu.no/emner/ST2304/2023v/Module05/DragonFire.csv")
+DragonFire <- read.csv(file="https://www.math.ntnu.no/emner/ST2304/2024v/Module05/DragonFire.csv")
 
 plot(DragonFire$Size, DragonFire$Distance, xlab="Length (m)", ylab="Distance (m)")
 
@@ -405,11 +392,11 @@ We have removed data where the man temperature was below freezing
 We can read in the data from the web:
 
 ```{r ReadData, echo=TRUE, eval=FALSE}
-ChicagoCrime <- read.csv("https://www.math.ntnu.no/emner/ST2304/2023v/Module05/NoFreezeTempCrimeChicago.csv")
+ChicagoCrime <- read.csv("https://www.math.ntnu.no/emner/ST2304/2024v/Module05/NoFreezeTempCrimeChicago.csv")
 str(ChicagoCrime)
 ```
 ```{r ReadData2, echo=FALSE, eval=TRUE}
-ChicagoCrime <- read.csv("https://www.math.ntnu.no/emner/ST2304/2023v/Module05/NoFreezeTempCrimeChicago.csv")
+ChicagoCrime <- read.csv("https://www.math.ntnu.no/emner/ST2304/2024v/Module05/NoFreezeTempCrimeChicago.csv")
 #str(ChicagoCrime)
 ```
 
