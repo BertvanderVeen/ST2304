@@ -1,7 +1,7 @@
 ---
 title: "ST2304 - Statistical Modelling for Biologists/Biotechnologists"
-author: "Bob O'Hara"
-date: "bob.ohara@ntnu.no"
+author: "Bert van der Veen"
+date: "bert.v.d.veen@ntnu.no"
 output:
   beamer_presentation: default
   ioslides_presentation: default
@@ -37,10 +37,11 @@ By the end of the practical the students should be able to run R and use simple 
 --->
 (we will deal with these in more detail later)
 
-- Reference Group
+- Reference Group (>3 students)
 
 - Blackboard
-- web page: https://www.math.ntnu.no/emner/ST2304/2023v/
+- Webpage: https://www.ntnu.no/studier/emner/ST2304
+- wiki: https://wiki.math.ntnu.no/st2304/2024v/start
 
 ## How the Course Will Run: Modules
 
@@ -86,19 +87,19 @@ Complete 8 exercise sets (of about 10)
 - first couple of weeks won't count 
     - we will tell you when they start to count
 
-## Virtual or in Person?
+## Lectures: ment(i)al?
 
-https://www.menti.com/al6sim51dgx9
+https://www.menti.com/alx4sq1y6cvu
 
 ![](mentimeter_qr_codeVirtual.png){height=70%}
 
 ## Teachers
 
-Me
+Bert van der Veen (me)
 
-Bert van der Veen
+Bob O'Hara (here, but not here)
 
-TA: Kenneth Aase
+Audun Rugstad (TA)
 
 
 ## Resources
@@ -109,10 +110,11 @@ Blackboard
 - links to more material
 - exercises
 
-Discussion board on Discourse: https://mattelab2023v.math.ntnu.no/c/st2304/52
+\textbf{Discussion board}
+https://mattelab2024v.math.ntnu.no/c/st2304/15
 
-Web page: https://wiki.math.ntnu.no/st2304/2023v/start 
-(this includes other links from this presentation)
+\textbf{Webpage}(this includes other links from this presentation)
+https://wiki.math.ntnu.no/st2304/2024v/start
 
 - modules
 
@@ -150,19 +152,18 @@ Google (yes, use it!)
 
 ## Recap: why do we we use statistics in biology
 
-What do you remember from ST0103?
+- Come up with 3 topics you learned about in \textbf{ST0103}, and examples where they are used in biology/biotechnology
+- Add the topics to TaskCard: https://ntnu.taskcards.app/#/board/3696eff3-b77d-4107-b7a8-fc4c03ef9f1c
 
-Discuss in groups, 
+![](taskqr){height=60%}
 
-- Come up with 3 topics you learned about, and for each give an example where they are used in biology (or biotechnology!)
-- Add the topics to TaskCard: https://ntnu.taskcards.app/#/board/448a3a68-62df-4a5a-9820-0d03428d06fb
 
 
 <!---
 Begin with a recap of why we use statistics in biology inc. an in-lecture exercise on what they can remember from before christmas, as we assume they don’t think about stats in the holiday.
 --->
 
-## .
+<!-- ## . -->
 
 
 <!---
@@ -299,16 +300,16 @@ Overview of the structure of the course i.e. what we will cover and what order, 
 - The R part should cover what R is, what R studio is (like last year), maybe including the orientation slides I did last year. Then have a section on getting help in R and on google and explain none of us as masters, it is a tool, not something you memorise. Then give a demo of some cool things but don’t show all the code on slides. 
 --->
 
-Weeks 1-3: Likelihood and R
+Modules 1-3: Likelihood and R
 
 - statistical theory, and programming
 - the background you will need to understand what follows, and to do it
 
-Weeks 4-10: Linear models (regression, ANOVA)
+Modules 4-10: Linear models (regression, ANOVA)
 
 - fitting straight lines
 
-Weeks 11-13: Generalised Linear models
+Modules 11-13: Generalised Linear models
 
 - fitting straight lines to different types of data
 
