@@ -248,7 +248,7 @@ There are a few ways to calculate confidence intervals. One way is to sort the n
 # simulate data (you should do this using the MLE)
 SimDist1k <- simGlobe(probability=pHatBig, NTrials=nTrialsBig, nSims = 1e3)["Land",]
 # For each simulation, calculate the MLE for that simulated data
-SimMLE1k <- mleGlobe(SimDist1k, 1000)
+SimMLE1k <- mleGlobe(SimDist1k, nTrialsBig)
 # and sort...
 sort(SimMLE1k)[1:10]
 ```
