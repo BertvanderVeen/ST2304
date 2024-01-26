@@ -139,7 +139,7 @@ plot(x,log(y), type="l")
 
 For these exercises you will need a few extra functions. You
 can find them by using `source()` to import and run a script
-found here https://www.math.ntnu.no/emner/ST2304/2024v/Week04/NormalDistFunctions.R
+found here https://www.math.ntnu.no/emner/ST2304/2024v/Module04/NormalDistFunctions.R
 
 Let's look at the normal distribution, and some R functions we can use to play with it. In particular:
 
