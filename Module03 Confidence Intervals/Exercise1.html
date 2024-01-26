@@ -613,7 +613,7 @@ likelihoods.approx &lt;- dnorm(Probabilities, phat, stderr)
 likelihoods.approx &lt;- likelihoods.approx/max(likelihoods.approx)
 
 # plot the previous likelihood (binomial)
-plot(x=Probabilities, y=likelihoods, type=&quot;l&quot;, ylab=&quot;Likelihood&quot;, xlab=&quot;Number of dragons&quot;)
+plot(x=Probabilities, y=likelihoods, type=&quot;l&quot;, ylab=&quot;Likelihood&quot;, xlab=&quot;Probability&quot;)
 # add a line for the new normal approximation likelihood
 # need to multiply the relative likelhoods by the maximum from the binomial
 lines(Probabilities, likelihoods.approx*max(likelihoods), col=&quot;red&quot;)
@@ -719,7 +719,7 @@ likelihoods.approx.Pois &lt;- dnorm(lambdas, MLE.Pois$maximum,
                                  sqrt(MLE.Pois$maximum)) 
 likelihoods.approx.Pois &lt;- likelihoods.approx.Pois/max(likelihoods.approx.Pois)
 
-plot(lambdas, likelihoods.Pois, type=&quot;l&quot;, ylab=&quot;Likelihood&quot;, xlab=&quot;Probability&quot;)
+plot(lambdas, likelihoods.Pois, type=&quot;l&quot;, ylab=&quot;Likelihood&quot;, xlab=&quot;Number of dragons&quot;)
 lines(lambdas, likelihoods.approx.Pois*max(likelihoods.Pois), col=&quot;blue&quot;)
 
 stderr_Pois &lt;- sqrt(MLE.Pois$maximum) # standard deviation as normal approximation
