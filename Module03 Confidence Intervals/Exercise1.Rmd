@@ -408,14 +408,14 @@ ObservedAbundance <- 29
 # The Poisson distribution
 
 The Poisson distribution is characterised by a single parameter. 
-Lambda $latex \lambda $ which is the mean (and also the variance) of the 
+Lambda $\lambda$ which is the mean (and also the variance) of the 
 distribution.
 As with the binomial distribution (and $p$, the probability), 
 we can also find the maximum likelihood estimate for the Poisson, 
-but here we are finding the likelihood of different $latex \lambda $ (means).
+but here we are finding the likelihood of different $\lambda$ (means).
 
 **Below you can see the code to find the likelihoods of different 
-$latex \lambda $ and then plot them.**
+$\lambda$ and then plot them.**
 
 **Details are as follows:**
 
